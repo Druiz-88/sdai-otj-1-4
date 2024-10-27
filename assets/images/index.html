@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar Example</title>
+    <title>Dark Themed Navbar</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
             margin: 0;
             padding: 0;
         }
@@ -15,23 +17,35 @@
             padding: 10px;
             display: flex;
             justify-content: space-around;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
         }
         nav a {
-            color: white;
+            color: #e0e0e0;
             padding: 14px 20px;
             text-decoration: none;
             text-align: center;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, color 0.3s;
         }
         nav a:hover {
-            background-color: #575757;
+            background-color: #555;
+            color: #fff;
+        }
+        nav .active {
+            background-color: #444;
+            color: #fff;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #2a2a2a;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
 
 <nav>
-    <a href="#about">About Us</a>
+    <a href="#about" class="active">About Us</a>
     <a href="#dev-favorites">Dev Favorites</a>
     <a href="#location">Location</a>
     <a href="#hours">Hours</a>
