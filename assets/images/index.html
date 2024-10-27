@@ -3,14 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>On the Job Copy Document</title>
+    <title>Navbar Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+    </style>
 </head>
 <body>
-   <h1>Dev Dish Food Truck & Restaurant</h1>
-   <h2>About us</h2>
-   <p>What's so great about combining the worlds of coding and cuisine? Dev Dish was founded by two passionate developers who turned their love for software into a culinary adventure. After years of coding by day and cooking by night, they decided to merge their two passions and create something extraordinary.</p>
-   <p>Dev Dish brings a unique twist to the food truck scene, offering a menu full of creative, tech-inspired dishes. Whether you're a tech enthusiast or a food lover, our offerings are designed to satisfy both your appetite and your curiosity.</p>
-   <p>Dev Dish is the brainchild of Alex and Jamie, two friends who met at a hackathon and discovered a shared love for innovative cuisine. With a background in software development and a knack for culinary creativity, they embarked on a journey to deliver delicious, tech-themed dishes to the community.</p>
-   
+
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#dev-favorites">Dev Favorites</a>
+    <a href="#location">Location</a>
+    <a href="#hours">Hours</a>
+</nav>
+
+<!-- Content Sections -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>Learn more about our mission and values.</p>
+</section>
+
+<section id="dev-favorites">
+    <h2>Dev Favorites</h2>
+    <p>Check out our favorite tools and resources.</p>
+</section>
+
+<section id="location">
+    <h2>Location</h2>
+    <p>Find us at our headquarters.</p>
+</section>
+
+<section id="hours">
+    <h2>Hours</h2>
+    <p>Our operating hours are 9 AM to 5 PM, Monday to Friday.</p>
+</section>
+
 </body>
 </html>
