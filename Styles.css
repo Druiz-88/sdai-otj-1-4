@@ -24,3 +24,18 @@ h3 {
     text-align: left;
     color:white;
 }
+
+p {
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin-top: 20px;  /* Space above */
+    margin-bottom: 10px;  /* Space below */
+    padding-top: 5px;  /* Optional padding inside */
+}
+
+p {
+    margin: 15px 0;  /* Space above and below paragraphs */
+    padding: 10px;  /* Space inside the paragraph */
+}
