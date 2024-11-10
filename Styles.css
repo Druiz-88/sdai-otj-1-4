@@ -39,3 +39,16 @@ p {
     margin: 15px 0;  /* Space above and below paragraphs */
     padding: 10px;  /* Space inside the paragraph */
 }
+
+.image-container {
+    display: flex;
+    gap: 10px;
+    width: 1555px; /* Adjust width as needed */
+    padding: 10px; /* Space around the image */
+    border: 2px solid #ccc; /* Border around the container */
+    border-radius: 8px; /* Rounded corners */
+    justify-content: center;
+    align-items: center;
+    background-color: #000000; /* Background color for the container */
+  }
+  
