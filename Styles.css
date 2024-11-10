@@ -43,12 +43,21 @@ p {
 .image-container {
     display: flex;
     gap: 10px;
-    width: 1555px; /* Adjust width as needed */
-    padding: 10px; /* Space around the image */
-    border: 2px solid #ccc; /* Border around the container */
-    border-radius: 8px; /* Rounded corners */
+    padding: 1%; /* Use percentage padding for responsiveness */
+    border: 2px solid #ccc;
+    border-radius: 8px;
     justify-content: center;
     align-items: center;
-    background-color: #000000; /* Background color for the container */
-  }
-  
+    background-color: #000000;
+    flex-wrap: wrap;
+    max-width: 100%; /* Ensure container doesn’t exceed viewport width */
+    box-sizing: border-box; /* Include padding and border in width calculations */
+}
+
+.image-container img {
+    width: 100%;      /* Image fills the container width */
+    max-width: 300px; /* Sets a maximum width for each image */
+    height: 200px;    /* Fixed height to make images uniform */
+    object-fit: cover; /* Crops the image to fill the set width and height */
+    border-radius: 8px;
+}
